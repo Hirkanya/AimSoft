@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AimSoftis an IT solutions company </title>
+<meta name="description" content="A description of your website">
+<meta name="keywords" content="keyword1, keyword2, keyword3">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+	<style>
+	.mySlides {display:none;}
+	</style>
+
+</head>
+<body>
+
+<div id="wrapper"> 
+
+  <div id="header"> 
+ 	<div> 
+		<img class="mySlides" src="images/009.jpg" style="width:100%">
+		<img class="mySlides" src="images/002.jpg" style="width:100%;">
+	   </div>
+	<div class="navigation">
+      <div>
+			<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="aboutUs.html">About</a></li>
+		   </ul>
+	   </div>
+    </div>
+</div> 
+<div id="page_content">
+  
+ <!-- <div class="left_side_bar"> 
+    <div class="col_1">
+        <h1>Main Menu</h1>
+        <div class="box">
+          <ul>
+            <li><a href="#">Latest Course</a></li>
+            <li><a href="#">MSCIT</a></li>
+            <li><a href="#">Additional Information</a></li>
+           </ul>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="right_section">
+      <div class="common_content">
+        <h2>INTRODUCTION</h2>
+        <hr>
+        <p>AimSoftis an IT solutions company founded by IT professionals to provide full technical support in the various areas of Information Technology. Established in the year January, 2005 started its operations from Bhandara District covering locations at Nagpur and entire Maharashtra Region. 
+
+Our expertise extends maintenance on all latest platforms and offers solutions and turnkey project in structured networking, LAN, WAN connectivity, data security & storage, server and high computing solutions. Surveillance, Firewalling, Cyber Security are our few technical strengths. Our IT professional team includes qualified professionals from all areas of technologies & has experience in almost all the operating systems viz. Windows Vista, Windows 8, Win Advance Server, RED HAT Linux, SQL Server, SAP etc. We provide highly qualitative and cost-effective IT infrastructure, Network data, Voice & Services. We offer a wide range of creative & customized IT solutions that are designed to meet specific business needs.
+</p>
+        
+        </div>
+      
+    </div>
+
+  <div class="clear"></div>
+		<!--start footer from here-->
+		<div id="footer">Plot No. 17, Sai Nagar, Bharatwada Road, Nagpur – 440 008.Mobile: +91 8889911508<br>
+		</div>
+	</div>
+</div>
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 3000); 
+}
+</script>
+
+</body></html>
